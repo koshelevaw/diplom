@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/favicon">
+  <title>dYdX</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="overlay"></div>
+    <header class="header header__discover">
+      <a class="burger" onclick="burgerMenu(this)" href="#">
+        <span></span>
+      </a>
+      <div class="header__top header__top--discover">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="header__logo" href="index.html">
+              <img src="images/logo/header-logo.svg" alt="Logo">
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__logo-item">
+                  <a class="header__logo-burger burger--logo" href="index.html">
+                    <img src="images/logo/header-logo.svg" alt="Logo">
+                  </a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="discover.html">Discover initiatives</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="funded.html">Funded grants</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="program.html">Program expenses</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="header__socials-item">
+                  <a class="header__socials-link" href="#">
+                    <svg class="burger-svg visible" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z" fill="#C8C7D8"/>
+                    </svg>
+                  </a>
+                  <a class="header__socials-link" href="#">
+                    <svg class="burger-svg visible" width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.317 2.15704C18.7873 1.45516 17.147 0.938041 15.4319 0.641867C15.4007 0.636151 15.3695 0.650436 15.3534 0.679006C15.1424 1.05422 14.9087 1.54372 14.7451 1.92846C12.9004 1.65229 11.0652 1.65229 9.25832 1.92846C9.09465 1.53517 8.85248 1.05422 8.64057 0.679006C8.62449 0.651389 8.59328 0.637105 8.56205 0.641867C6.84791 0.937095 5.20756 1.45421 3.67693 2.15704C3.66368 2.16275 3.65233 2.17228 3.64479 2.18466C0.533392 6.83302 -0.31895 11.3671 0.0991801 15.845C0.101072 15.8669 0.11337 15.8879 0.130398 15.9012C2.18321 17.4087 4.17171 18.3239 6.12328 18.9306C6.15451 18.9401 6.18761 18.9287 6.20748 18.903C6.66913 18.2725 7.08064 17.6078 7.43348 16.9088C7.4543 16.8678 7.43442 16.8193 7.39186 16.8031C6.73913 16.5555 6.1176 16.2536 5.51973 15.9107C5.47244 15.8831 5.46865 15.8155 5.51216 15.7831C5.63797 15.6888 5.76382 15.5907 5.88396 15.4917C5.90569 15.4736 5.93598 15.4698 5.96153 15.4812C9.88928 17.2745 14.1415 17.2745 18.023 15.4812C18.0485 15.4688 18.0788 15.4726 18.1015 15.4907C18.2216 15.5898 18.3475 15.6888 18.4742 15.7831C18.5177 15.8155 18.5149 15.8831 18.4676 15.9107C17.8697 16.2602 17.2482 16.5555 16.5945 16.8021C16.552 16.8183 16.533 16.8678 16.5538 16.9088C16.9143 17.6068 17.3258 18.2716 17.7789 18.902C17.7978 18.9287 17.8319 18.9401 17.8631 18.9306C19.8241 18.3239 21.8126 17.4087 23.8654 15.9012C23.8834 15.8879 23.8948 15.8679 23.8967 15.846C24.3971 10.669 23.0585 6.1721 20.3482 2.1856C20.3416 2.17228 20.3303 2.16275 20.317 2.15704ZM8.02002 13.1184C6.8375 13.1184 5.86313 12.0328 5.86313 10.6995C5.86313 9.36623 6.8186 8.28059 8.02002 8.28059C9.23087 8.28059 10.1958 9.37577 10.1769 10.6995C10.1769 12.0328 9.22141 13.1184 8.02002 13.1184ZM15.9947 13.1184C14.8123 13.1184 13.8379 12.0328 13.8379 10.6995C13.8379 9.36623 14.7933 8.28059 15.9947 8.28059C17.2056 8.28059 18.1705 9.37577 18.1516 10.6995C18.1516 12.0328 17.2056 13.1184 15.9947 13.1184Z" fill="#C8C7D8"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__btn-box">
+              <a class="header__top-btn button--top" href="apply.html">Apply for grant</a>
+            </div>
+            <div class="header__btn-burger">
+              <a class="header__top-btn burger--btn" href="apply.html">
+                <span>Apply</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__discover">
+        <div class="container">
+          <div class="discover__inner">
+            <div class="discover__heading">
+              <h2 class="heading__title discover-title">Discover initiatives (RFPs)</h2>
+              <p class="heading__subtitle-discover">
+                The list below includes initial ideas that 
+                we think could make excellent Grants. This 
+                is a living list that will continue to 
+                update as ideas popup.
+              </p>
+            </div>
+            <div class="discover__body">
+              <ul class="discover__filter-box">
+                <li class="discover__filter-item">
+                  <button class="discover__filter-btn discover__filter-btn--active mixitup-control-active" type="button" data-filter="all">All</button>
+                </li>
+                <li class="discover__filter-item">
+                  <button class="discover__filter-btn" type="button" data-filter=".discover__list-item--open">Open</button>
+                </li>
+                <li class="discover__filter-item">
+                  <button class="discover__filter-btn" type="button" data-filter=".discover__list-item--funded">Funded</button>
+                </li>
+                <li class="discover__filter-item">
+                  <button class="discover__filter-btn" type="button" data-filter=".discover__list-item--completed">Completed</button>
+                </li>
+              </ul>
+              <ul class="discover__list" id="MixItUpB0C246">
+                <li class="mix discover__list-item discover__list-item--funded" data-order="1">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Funding Rate Page</h4>
+                        <p class="discover__slide-info">
+                          Page that provides a live look 
+                          at all funding rates with popular 
+                          timeframes in annualized format
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $45,000 - $85,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--funded" data-order="2">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">CLI Trading Tool</h4>
+                        <p class="discover__slide-info">
+                          Self-hosted CLI tool leveraging the 
+                          dYdX API to allow all functionalities 
+                          from a terminalt
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $25,000 - $40,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--open" data-order="3">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">New Language SDKs</h4>
+                        <p class="discover__slide-info">
+                          Replicate existing Python SDK to new 
+                          programming languages with all the same 
+                          features
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $25,000 - $40,000</p>
+                      </div>
+                      <div class="discover__link-tag open">Open</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--completed" data-order="4">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Liquidation Alert Tool</h4>
+                        <p class="discover__slide-info complete">
+                          Self-hosted tool that alerts the trader 
+                          of upcoming liquidation prices across multiple 
+                          messaging venues
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $30,000 - $50,000</p>
+                      </div>
+                      <div class="discover__link-tag completed">
+                        <span>Completed</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--funded" data-order="5">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Governance Dashboard</h4>
+                        <p class="discover__slide-info">
+                          Governance page to promote  discussions, 
+                          proposals, delegation and voting
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $15,000 - $30,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--funded" data-order="6">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Delegation Tool</h4>
+                        <p class="discover__slide-info">
+                          Webpage to allow active participants to market 
+                          their voting and enable direct delegation from 
+                          DYDX holders
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $15,000 - $30,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--funded" data-order="7">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Newsletter</h4>
+                        <p class="discover__slide-info">
+                          Weekly or Monthly newsletters promoting 
+                          and educating the dYdX platform
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $10,000 - $20,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--funded" data-order="8">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Academy Contributions</h4>
+                        <p class="discover__slide-info">
+                          Webpages, Courses, Glossaries and Youtube 
+                          libraries educating new users on dYdX
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $10,000 - $25,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--open" data-order="9">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Discord bots</h4>
+                        <p class="discover__slide-info">
+                          Additional Discord bots that notify members 
+                          of activity on dYdX and governance
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $5,000 - $10,000</p>
+                      </div>
+                      <div class="discover__link-tag open">Open</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix discover__list-item discover__list-item--funded" data-order="10">
+                  <a class="discover__list-link" href="#">
+                    <div class="discover__link-content">
+                      <div class="discover__link-text">
+                        <h4 class="discover__slide-title">Reward tracking & Simulator</h4>
+                        <p class="discover__slide-info">
+                          Page or tool that allows traders to calculate 
+                          future rewards and simulate earnings from 
+                          activity
+                        </p>
+                        <p class="discover__slide-price">Funding amount:  $20,000 - $30,000</p>
+                      </div>
+                      <div class="discover__link-tag funded">Funded</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__cta">
+        <div class="container">
+          <div class="cta__inner">
+            <div class="cta__card-wrapper">
+              <div class="cta__card">
+                <div class="cta__card-box">
+                  <p class="cta__card-subtitle">Have a project in mind?</p>
+                  <h3 class="cta__card-title">
+                    Let’s create something awesome.
+                  </h3>
+                  <div class="cta__card-buttons">
+                    <a class="cta__card-btn button-cta" href="apply.html">
+                      <span>Apply for grant</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top-inner">
+          <a class="footer__logo" href="index.html">
+            <img src="images/logo/footer-logo.svg" alt="Logo">
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Brand assets</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link external-link-1" href="#">dYdX Foundation</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link external-link-2" href="#">dYdX trading</a>
+              </li>
+            </ul>
+            </nav>
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.55016 21.7507C16.6045 21.7507 21.5583 14.2474 21.5583 7.74259C21.5583 7.53166 21.5536 7.31603 21.5442 7.10509C22.5079 6.40819 23.3395 5.54499 24 4.55603C23.1025 4.95533 22.1496 5.21611 21.1739 5.32947C22.2013 4.71364 22.9705 3.7462 23.3391 2.6065C22.3726 3.17929 21.3156 3.58334 20.2134 3.80134C19.4708 3.01229 18.489 2.48985 17.4197 2.31478C16.3504 2.13972 15.2532 2.32178 14.2977 2.83283C13.3423 3.34388 12.5818 4.15544 12.1338 5.14204C11.6859 6.12865 11.5754 7.23535 11.8195 8.29103C9.86249 8.19282 7.94794 7.68444 6.19998 6.79883C4.45203 5.91323 2.90969 4.67017 1.67297 3.15025C1.0444 4.23398 0.852057 5.51638 1.13503 6.73682C1.418 7.95727 2.15506 9.02418 3.19641 9.72072C2.41463 9.6959 1.64998 9.48541 0.965625 9.10666V9.16759C0.964925 10.3049 1.3581 11.4073 2.07831 12.2875C2.79852 13.1677 3.80132 13.7713 4.91625 13.9957C4.19206 14.1939 3.43198 14.2227 2.69484 14.0801C3.00945 15.0582 3.62157 15.9136 4.44577 16.5271C5.26997 17.1405 6.26512 17.4813 7.29234 17.502C5.54842 18.8718 3.39417 19.6149 1.17656 19.6113C0.783287 19.6107 0.390399 19.5866 0 19.5392C2.25286 20.9845 4.87353 21.7521 7.55016 21.7507Z" fill="#C8C7D8"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.317 2.15704C18.7873 1.45516 17.147 0.938041 15.4319 0.641867C15.4007 0.636151 15.3695 0.650436 15.3534 0.679006C15.1424 1.05422 14.9087 1.54372 14.7451 1.92846C12.9004 1.65229 11.0652 1.65229 9.25832 1.92846C9.09465 1.53517 8.85248 1.05422 8.64057 0.679006C8.62449 0.651389 8.59328 0.637105 8.56205 0.641867C6.84791 0.937095 5.20756 1.45421 3.67693 2.15704C3.66368 2.16275 3.65233 2.17228 3.64479 2.18466C0.533392 6.83302 -0.31895 11.3671 0.0991801 15.845C0.101072 15.8669 0.11337 15.8879 0.130398 15.9012C2.18321 17.4087 4.17171 18.3239 6.12328 18.9306C6.15451 18.9401 6.18761 18.9287 6.20748 18.903C6.66913 18.2725 7.08064 17.6078 7.43348 16.9088C7.4543 16.8678 7.43442 16.8193 7.39186 16.8031C6.73913 16.5555 6.1176 16.2536 5.51973 15.9107C5.47244 15.8831 5.46865 15.8155 5.51216 15.7831C5.63797 15.6888 5.76382 15.5907 5.88396 15.4917C5.90569 15.4736 5.93598 15.4698 5.96153 15.4812C9.88928 17.2745 14.1415 17.2745 18.023 15.4812C18.0485 15.4688 18.0788 15.4726 18.1015 15.4907C18.2216 15.5898 18.3475 15.6888 18.4742 15.7831C18.5177 15.8155 18.5149 15.8831 18.4676 15.9107C17.8697 16.2602 17.2482 16.5555 16.5945 16.8021C16.552 16.8183 16.533 16.8678 16.5538 16.9088C16.9143 17.6068 17.3258 18.2716 17.7789 18.902C17.7978 18.9287 17.8319 18.9401 17.8631 18.9306C19.8241 18.3239 21.8126 17.4087 23.8654 15.9012C23.8834 15.8879 23.8948 15.8679 23.8967 15.846C24.3971 10.669 23.0585 6.1721 20.3482 2.1856C20.3416 2.17228 20.3303 2.16275 20.317 2.15704ZM8.02002 13.1184C6.8375 13.1184 5.86313 12.0328 5.86313 10.6995C5.86313 9.36623 6.8186 8.28059 8.02002 8.28059C9.23087 8.28059 10.1958 9.37577 10.1769 10.6995C10.1769 12.0328 9.22141 13.1184 8.02002 13.1184ZM15.9947 13.1184C14.8123 13.1184 13.8379 12.0328 13.8379 10.6995C13.8379 9.36623 14.7933 8.28059 15.9947 8.28059C17.2056 8.28059 18.1705 9.37577 18.1516 10.6995C18.1516 12.0328 17.2056 13.1184 15.9947 13.1184Z" fill="#C8C7D8"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
