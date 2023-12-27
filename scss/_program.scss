@@ -1,0 +1,325 @@
+.header__top--program {
+  position: sticky;
+  z-index: 1;
+}
+
+.header__program {
+  position: relative;
+}
+
+.header__program::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 792px;
+  background-image: gradient(linear, left top, left bottom, from(rgba(28, 28, 40, 0.4)), to(rgba(28, 28, 40, 0.9))),url(../images/decor/grid.svg);
+  background-image: linear-gradient(to bottom, rgba(28, 28, 40, 0.4), rgba(28, 28, 40, 0.9)),url(../images/decor/grid.svg);
+  z-index: 0;
+}
+
+.main__program {
+  position: relative;
+  z-index: 0;
+}
+
+.footer__program {
+  position: relative;
+
+}
+
+.program__heading {
+  text-align: center;
+}
+
+.program-title {
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+
+.program__filter-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+.program__filter-item {
+  margin-right: 24px;
+}
+
+.program__filter-item:last-child {
+  margin-right: 0px;
+}
+
+.program__filter-btn {
+  font-family: Circular Std Medium;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.176px;
+  color: $color-content;
+  border-radius: 7.29px;
+  padding: 12px 16px 12px 16px;
+  background: none;
+}
+
+.program__filter-btn--active {
+  background: #393953;
+  color: #fff;
+}
+
+.program__list {
+  display: grid;
+  justify-content: space-around;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+
+.program__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1374px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(to top, rgba(28, 28, 40, 0.4), rgba(28, 28, 40, 0.9)),url(../images/decor/grid.svg);
+  z-index: -1;
+}
+
+.program__list-item {
+  border-radius: 16px;
+  background:#393953;
+  max-width: 808px;
+}
+
+.program__list-content {
+  display: grid;
+  grid-template: repeat(1, auto)/repeat(2, 1fr);
+  padding: 24px 24px 24px 24px;
+  gap: 32px;
+}
+
+.program__link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 553px;
+}
+
+.program__link-text.program__link-first {
+  width: 619px;
+}
+
+.program__slide-title {
+  font-family: Circular Std Bold;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.34px;
+  color: $color-title;
+}
+
+.program__slide-category,
+.program__slide-price{
+  font-family: $font-family-content;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-content;
+  padding-bottom: 8px;
+}
+
+.program__slide-info {
+  font-family: Circular Std Book;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.176px;
+  color: $color-title;
+}
+
+.first::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 90px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons/external-link-big.svg) 50% 50%/cover,no-repeat;
+}
+
+.program__slide-price {
+  color: $color-title;
+  position: relative;
+}
+
+.program__slide-price::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 154px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons/external-link-big.svg) 50% 50%/cover,no-repeat;
+}
+
+.first::before {
+  display: none;
+}
+
+/*===================MEDIA====================================*/
+/*===================870====================================*/
+
+@media (max-width: 870px) {
+  .program__list-item {
+    max-width: 80.8vw;
+  }
+  .program__link-text.program__link-first {
+    max-width: 61.4vw;
+  }
+  .program__link-text {
+    max-width: 53.7vw;
+  }
+  .program__slide-price::before {
+    display: none;
+  }
+  .first::after {
+    display: none;
+  }
+  .program__slide-price {
+    white-space: nowrap;
+  }
+}
+
+/*===================780====================================*/
+
+@media (max-width: 780px) {
+  .program__link-text.program__link-first {
+    max-width: 57.4vw;
+  }
+  .program__link-text {
+    max-width: 49.7vw;
+  }
+}
+
+/*===================768====================================*/
+
+@media (max-width: 768px) {
+  .program__link-text.program__link-first {
+    max-width: 61.4vw;
+  }
+  .program__link-text {
+    max-width: 52.7vw;
+  }
+}
+
+/*===================680====================================*/
+
+@media (max-width: 680px) {
+  .program__link-text.program__link-first {
+    max-width: 55.4vw;
+  }
+  .program__link-text {
+    max-width: 45.7vw;
+  }
+}
+
+/*===================580====================================*/
+
+@media (max-width: 580px) {
+  .program__link-text {
+    max-width: 43.7vw;
+  }
+  .program__list-content {
+    gap: 12px;
+  }
+}
+
+/*===================500====================================*/
+
+@media (max-width: 500px) {
+  .program__slide-title {
+    font-size: 16px;
+  }
+  .program__slide-info {
+    font-size: 14px;
+  }
+  .program__link-text {
+    max-width: 40.7vw;
+  }
+}
+
+/*===================470====================================*/
+
+@media (max-width: 470px) {
+  .program__link-text.program__link-first {
+    max-width: 50.4vw;
+  }
+  .program__link-text {
+    max-width: 36.7vw;
+  }
+}
+
+/*===================425====================================*/
+
+@media (max-width: 425px) {
+  .program-title {
+    font-size: 40px;
+  }
+  .program__link-text.program__link-first {
+    max-width: 53.4vw;
+  }
+  .program__link-text {
+    max-width: 39.7vw;
+  }
+  .program__slide-price {
+    font-size: 14px;
+  }
+}
+
+
+/*===================390====================================*/
+
+@media (max-width: 390px) {
+  .program__link-text.program__link-first {
+    max-width: 50.4vw;
+  }
+  .program__link-text {
+    max-width: 35.7vw;
+  }
+}
+
+/*===================375====================================*/
+
+@media (max-width: 375px) {
+  .program__link-text.program__link-first {
+    max-width: 50.4vw;
+  }
+  .program__link-text {
+    max-width: 34.7vw;
+  }
+}
+
+/*===================320====================================*/
+
+@media (max-width: 320px) {
+  .program__link-text.program__link-first {
+    max-width: 45.4vw;
+  }
+  .program__link-text {
+    max-width: 26.7vw;
+  }
+}
+
+/*===================280====================================*/
+
+@media (max-width: 280px) {
+  .program__slide-price {
+    white-space: wrap;
+  }
+  .program__link-text.program__link-first {
+    max-width: 37.4vw;
+  }
+}

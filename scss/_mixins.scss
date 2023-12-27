@@ -1,0 +1,86 @@
+%button-top {
+  display: inline-block;
+  font-family: Circular Std Medium;
+  line-height: 24px;
+  padding: 12px 16px;
+  border-radius: 7px;
+  background: $bg-button;
+  white-space: nowrap;
+  color: #fff;
+}
+
+%button {
+  display: inline-block;
+  font-family: Circular Std Medium;
+  width: 180px;
+  line-height: 24px;
+  padding: 12px 16px;
+  border-radius: 7px;
+  background: #393953;
+  white-space: nowrap;
+  color: #fff;
+}
+
+%heading__title {
+  font-family: Circular Std Bold;
+  font-size: 40px;
+  color: $color-title;
+  line-height: 120%;
+  letter-spacing: -0.88px;
+  padding-bottom: 16px;
+}
+
+%heading__subtitle {
+  font-family: Circular Std Book;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.252px;
+  color: $color-content;
+  max-width: 600px;
+  padding-bottom: 24px;
+}
+
+%heading__more {
+  font-family: Circular Std Book;
+  font-size: 18px;
+  color: $bg-button;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+%grant-project {
+  display: inline-block;
+  width: 392px;
+  height: 560px;
+  background: #393953;
+  border-radius: 16px;
+  border: 1px solid #464663;
+}
+
+%blog-card {
+  display: inline-block;
+  width: 392px;
+  height: 440px;
+  background: #393953;
+  border-radius: 16px;
+  border: 1px solid #464663;
+}
+
+%process-card {
+  display: inline-block;
+  width: 392px;
+  height: 480px;
+  background: #393953;
+  border-radius: 16px;
+  border: 1px solid #464663;
+}
+
+%cta-card {
+  display: inline-block;
+  width: 1224px;
+  height: 248px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.00);
+  background: linear-gradient(326deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Space Mono Regular";
+  src: local("Space Mono Regular"),
+    local("SpaceMono-Regular"),
+    url("../fonts/SpaceMono-Regular.woff2") format("woff2"),
+    url("../fonts/SpaceMono-Regular.woff") format("woff"),
+    url("../fonts/SpaceMono-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: local("Circular Std Book"),
+    local("CircularStd-Book"),
+    url("../fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/CircularStd-Book.woff") format("woff"),
+    url("../fonts/CircularStd-Book.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std Medium";
+  src: local("Circular Std Medium"),
+    local("CircularStd-Medium"),
+    url("../fonts/CircularStd-Medium.woff2") format("woff2"),
+    url("../fonts/CircularStd-Medium.woff") format("woff"),
+    url("../fonts/CircularStd-Medium.eot") format("eot");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src: local("Circular Std Bold"),
+    local("CircularStd-Bold"),
+    url("../fonts/CircularStd-Bold.woff2") format("woff2"),
+    url("../fonts/CircularStd-Bold.woff") format("woff"),
+    url("../fonts/CircularStd-Bold.eot") format("eot");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nanum Pen Regular";
+  src: local("Nanum Pen Regular"),
+    local("SpaceMono-Regular"),
+    url("../fonts/NanumPenScript-Regular.woff2") format("woff2"),
+    url("../fonts/NanumPenScript-Regular.woff") format("woff"),
+    url("../fonts/NanumPenScript-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
